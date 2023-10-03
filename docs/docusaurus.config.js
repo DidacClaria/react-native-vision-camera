@@ -10,17 +10,11 @@ module.exports = {
   projectName: 'react-native-vision-camera',
   themeConfig: {
     algolia: {
-      appId: 'NRK7PZXU6O',
-      apiKey: '33d54e627c4587a6d8dbff79d5209e46',
-      indexName: 'react-native-vision-camera2',
-      contextualSearch: false
-    },
-    colorMode: {
-      respectPrefersColorScheme: true
+      appId: 'HBHXBT6T9E',
+      apiKey: '64bc77eda92b7efcb7003b56815f1113',
+      indexName: 'react-native-vision-camera',
     },
     prism: {
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/palenight'),
       additionalLanguages: ['swift', 'java', 'kotlin'],
     },
     navbar: {
@@ -41,7 +35,7 @@ module.exports = {
           position: 'left'
         },
         {
-          href: 'https://github.com/mrousavy/react-native-vision-camera/tree/main/package/example',
+          href: 'https://github.com/mrousavy/react-native-vision-camera/tree/main/example',
           label: 'Example App',
           position: 'left'
         },
@@ -68,17 +62,13 @@ module.exports = {
             },
             {
               label: 'Example App',
-              href: 'https://github.com/mrousavy/react-native-vision-camera/tree/main/package/example',
+              href: 'https://github.com/mrousavy/react-native-vision-camera/tree/main/example',
             },
           ],
         },
         {
           title: 'Community',
           items: [
-            {
-              label: 'Community Discord',
-              href: 'https://discord.com/invite/6CSHz2qAvA',
-            },
             {
               label: 'GitHub discussions',
               href: 'https://github.com/mrousavy/react-native-vision-camera/discussions',
@@ -128,6 +118,14 @@ module.exports = {
         content: '/img/11.png'
       },
     ],
+    announcementBar: {
+      id: 'support_us',
+      content:
+        '<b>I am currently working on <a target="_blank" href="https://github.com/mrousavy/react-native-vision-camera/issues/1376">VisionCamera V3 ✨</a> which brings a lot of new features and a full rewrite on Android. Please consider <a target="_blank" href="https://github.com/sponsors/mrousavy">sponsoring me on GitHub</a> so I can work on this.</b>',
+      backgroundColor: '#ff5c5c',
+      textColor: '#ffffff',
+      isCloseable: false,
+    },
   },
   presets: [
     [
@@ -158,9 +156,9 @@ module.exports = {
       'docusaurus-plugin-typedoc',
       {
         name: 'VisionCamera',
-        entryPoints: ['../package/src'],
-        exclude: "../package/src/index.ts",
-        tsconfig: '../package/tsconfig.json',
+        entryPoints: ['../src'],
+        exclude: "../src/index.ts",
+        tsconfig: '../tsconfig.json',
         watch: process.env.TYPEDOC_WATCH,
         excludePrivate: true,
         excludeProtected: true,
@@ -173,4 +171,4 @@ module.exports = {
       },
     ],
   ],
-}
+};
